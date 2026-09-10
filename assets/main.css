@@ -1,9 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  --color-darkest: var(--color-stone-900);
-  --color-darker: var(--color-stone-800);
-  --color-dark: var(--color-stone-700);
+  /* Light mode */
+  --color-lightest: #FFF8EF;
+  --color-lighter: #FDEBD5;
+  --color-light: #FFC98F;
+
+  /* Dark mode */
+  --color-darkest: #18191A;
+  --color-darker: #242625;
+  --color-dark: #303230;
+
+  /* Text */
+  --color-text: #3B3028;
+  --color-text-light: #F2F3EE;
+  --color-text-muted: #C8CBC3;
+
+  /* Matcha */
+  --color-matcha: #A8BFA0;
+  --color-matcha-strong: #91AA88;
+  --color-matcha-dark: #61725D;
+
+  /* Cantaloupe / orange */
+  --color-cantaloupe: #FFC98F;
+  --color-peach: #FFB66D;
+  --color-orange: #F28C28;
+  --color-orange-dark: #C96B16;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -15,17 +37,17 @@
 @source "../../themes/**/layouts/**/*.html";
 
 @utility prose {
-  --tw-prose-bullets: var(--color-stone-700);
-  --tw-prose-counters: var(--color-stone-700);
-  --tw-prose-links: var(--color-blue-500);
-  --tw-prose-quote-borders: var(--color-stone-400);
+  --tw-prose-bullets: var(--color-text);
+  --tw-prose-counters: var(--color-text);
+  --tw-prose-links: var(--color-orange-dark);
+  --tw-prose-quote-borders: var(--color-light);
 
-  --tw-prose-invert-bullets: var(--color-stone-200);
-  --tw-prose-invert-counters: var(--color-stone-200);
-  --tw-prose-invert-links: var(--color-yellow-300);
-  --tw-prose-invert-quote-borders: var(--color-stone-400);
+  --tw-prose-invert-bullets: var(--color-text-light);
+  --tw-prose-invert-counters: var(--color-text-light);
+  --tw-prose-invert-links: var(--color-matcha);
+  --tw-prose-invert-quote-borders: var(--color-matcha-dark);
 
-  &: is(.prose-invert, [data-theme= "dark"] &) {
+  &:is(.prose-invert, [data-theme="dark"] &) {
     --tw-prose-bullets: var(--tw-prose-invert-bullets);
     --tw-prose-counters: var(--tw-prose-invert-counters);
     --tw-prose-links: var(--tw-prose-invert-links);
@@ -40,7 +62,11 @@
   }
 
   body {
-    @apply text-base bg-stone-50 text-stone-900 dark:text-stone-50 dark:bg-darkest;
+    @apply text-base
+      bg-lightest
+      text-text
+      dark:bg-darkest
+      dark:text-text-light;
   }
 
   h1 {
@@ -60,11 +86,19 @@
   }
 
   a {
-    @apply text-blue-500 hover:text-blue-700 hover:underline dark:text-yellow-300 dark:hover:text-yellow-500 transition-colors;
+    @apply text-orange-dark
+      hover:text-orange
+      hover:underline
+      dark:text-matcha
+      dark:hover:text-matcha-strong
+      transition-colors;
   }
 
   mark {
-    @apply bg-yellow-300 text-gray-800 dark:bg-yellow-500 dark:text-gray-900;
+    @apply bg-cantaloupe
+      text-text
+      dark:bg-matcha
+      dark:text-darkest;
   }
 
   .prose {
@@ -85,7 +119,11 @@
     }
 
     blockquote {
-      @apply p-1 m-0 bg-gray-100 dark:bg-dark rounded-sm;
+      @apply p-1 m-0
+        bg-lighter
+        dark:bg-darker
+        rounded-sm;
+
       p {
         @apply m-0! p-1;
       }
@@ -96,32 +134,72 @@
 @layer components {
   ul.pagination {
     @apply flex flex-row justify-center list-none;
+
     li {
-      @apply border border-gray-500 dark:border-yellow-300 flex justify-center items-center;
+      @apply border border-orange-dark
+        dark:border-matcha
+        flex justify-center items-center;
     }
+
     .page-link {
-      @apply px-2 sm:px-4 py-1 hover:text-gray-200 dark:hover:text-gray-800 hover:bg-blue-500 dark:hover:bg-yellow-300;
+      @apply px-2 sm:px-4 py-1
+        hover:text-lightest
+        hover:bg-orange
+        dark:hover:text-darkest
+        dark:hover:bg-matcha;
     }
+
     .active {
-      @apply bg-blue-500 pointer-events-none dark:bg-yellow-300;
+      @apply bg-orange
+        pointer-events-none
+        dark:bg-matcha;
+
       .page-link {
-        @apply text-gray-200 dark:text-gray-800;
+        @apply text-lightest
+          dark:text-darkest;
       }
     }
   }
 
   .categories {
-    @apply inline-block p-1 mr-2 mb-2 text-sm rounded-sm border border-green-600 text-green-800 bg-green-100 hover:bg-green-200 dark:border-green-100 hover:shadow-sm;
+    @apply inline-block p-1 mr-2 mb-2 text-sm rounded-sm
+      border border-orange-dark
+      text-orange-dark
+      bg-lighter
+      hover:bg-cantaloupe
+      dark:border-matcha
+      dark:text-matcha
+      dark:bg-darker
+      dark:hover:bg-dark
+      hover:shadow-sm;
   }
+
   .tags {
-    @apply inline-block p-1 mr-2 mb-2 text-sm rounded-sm border border-gray-600 text-gray-800 bg-gray-200 hover:bg-gray-300 dark:border-gray-100 hover:shadow-sm;
+    @apply inline-block p-1 mr-2 mb-2 text-sm rounded-sm
+      border border-orange-dark
+      text-text
+      bg-lighter
+      hover:bg-cantaloupe
+      dark:border-matcha
+      dark:text-text-light
+      dark:bg-darker
+      dark:hover:bg-dark
+      hover:shadow-sm;
   }
 
   .nav {
-    @apply text-lg text-blue-500 dark:text-gray-300 font-semibold;
+    @apply text-lg
+      text-orange-dark
+      dark:text-matcha
+      font-semibold;
   }
+
   .nav-menu-item {
-    @apply hover:no-underline p-2 rounded-sm hover:bg-gray-200 dark:hover:bg-gray-800;
+    @apply hover:no-underline
+      p-2
+      rounded-sm
+      hover:bg-lighter
+      dark:hover:bg-darker;
   }
 
   .active {
@@ -131,10 +209,16 @@
   h2.accordion {
     @apply font-normal;
   }
+
   .accordion {
-    @apply text-blue-600 dark:text-yellow-500 mt-0;
+    @apply text-orange-dark
+      dark:text-matcha
+      mt-0;
+
     > p {
-      @apply my-0 p-2 hover:bg-gray-300 rounded-sm dark:hover:bg-darker;
+      @apply my-0 p-2
+        hover:bg-lighter
+        dark:hover:bg-darker;
     }
   }
 
@@ -143,20 +227,27 @@
     transition: 0.3s ease-out;
     overflow: hidden;
   }
+
   .chevron {
     transition: 300ms linear rotate;
   }
+
   .active > .chevron {
     transform: rotate(90deg);
   }
 
   .pagefind-ui__search-input {
-    @apply w-full p-2 rounded border border-gray-500 text-black dark:text-white dark:bg-[#322d2d];
+    @apply w-full p-2 rounded
+      border border-orange-dark
+      text-text
+      bg-lightest
+      dark:border-matcha
+      dark:text-text-light
+      dark:bg-darker;
   }
+
   .pagefind-ui__search-clear {
     display: none;
   }
 }
-/*.dark body {
-    background-color: red !important;
-}*/
+

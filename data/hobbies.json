@@ -1,15 +1,18 @@
 {
   "title": "Hobbies",
-  "icon": "bi bi-controller",
+  "icon": "bi bi-palette-fill",
   "list": [
     {
-      "hobby": "Cooking"
+      "icon": "bi bi-camera-fill",
+      "hobby": "Photography"
     },
     {
-      "hobby": "Hiking"
+      "icon": "bi bi-speaker-fill",
+      "hobby": "Audio & Hifi"
     },
     {
-      "hobby": "Baking"
+      "icon": "bi bi-person-walking",
+      "hobby": "Skateboarding"
     }
   ]
 }

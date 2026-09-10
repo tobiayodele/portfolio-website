@@ -1,26 +1,33 @@
 baseURL: /
-locale: en-us
+locale: en-uk
 build:
   writeStats: true
-title: aafu theme
+title: Tobi Ayodele
 # Uncomment below to use aafu as hugo theme. See instructions in README.md
 # theme: aafu
 
 params:
-  author: Darshan Baral
-  description: Website title
-  copyright: powered by [hugo](https://gohugo.io/)
+  author: Tobi Ayodele
+  description: Tobi Ayodele Computer Science portfolio/blog
+  copyright: © 2026 Tobi Ayodele · powered by [hugo](https://gohugo.io/)
   theme:
     mainTheme: dark
     showAttribute: true
     singlePage: false
   accordion:
-    - item: about_me
-      expand: true # only the first `expand: true` will take effect
-    - item: experiences
-    - item: education
-    - item: publications
     - item: projects
+    - item: experience
+    - item: education
     - item: skills
       panel_id: skill-panel
     - item: hobbies
+
+security:
+  exec:
+    allow:
+      - '^(dart-)?sass$'
+      - '^go$'
+      - '^git$'
+      - '^node$'
+      - '^postcss$'
+      - '^tailwindcss$'

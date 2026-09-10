@@ -1,37 +1,19 @@
 [
   {
     "icon": "bi bi-linkedin",
-    "url": "#",
+    "url": "https://www.linkedin.com/in/tobiayodele/",
     "title": "LinkedIn"
   },
   {
-    "icon": "bi bi-stack-overflow",
-    "url": "#",
-    "title": "StackOverflow"
-  },
-  {
     "icon": "bi bi-github",
-    "url": "#",
+    "url": "https://github.com/tobiayodele",
     "title": "GitHub"
   },
   {
-    "icon": "bi bi-twitter",
-    "url": "#",
-    "title": "Twitter"
-  },
-  {
-    "icon": "ai ai-orcid",
-    "url": "#",
-    "title": "Orcid"
-  },
-  {
-    "icon": "ai ai-google-scholar",
-    "url": "#",
-    "title": "Google Scholar"
-  },
-  {
-    "icon": "ai ai-researchgate",
-    "url": "#",
-    "title": "ResearchGate"
-  }
+  "icon": "bi bi-envelope-fill",
+  "url": "mailto:tobi.ayodele@hotmail.com",
+  "title": "Email"
+}
+
+
 ]
