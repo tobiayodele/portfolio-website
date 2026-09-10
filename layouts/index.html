@@ -60,7 +60,7 @@
 
   {{ range .Site.Params.accordion }}
 
-    {{ $current := index hugo.Data .item }}
+    {{ $current := index .Site.Data .item }}
     {{ $sectionID := .item | urlize }}
 
     <section
