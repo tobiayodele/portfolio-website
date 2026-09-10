@@ -1,5 +1,5 @@
 <div class="mb-4 flex flex-col items-center gap-3">
-  {{ range hugo.Data.social }}
+  {{ range .Site.Data.social }}
   <a
     class="flex items-center gap-3 text-lg"
     href="{{ .url }}"
