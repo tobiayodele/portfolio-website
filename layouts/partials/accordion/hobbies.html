@@ -1,20 +1,7 @@
 <ul class="pl-0">
-  {{ range hugo.Data.hobbies.list }}
-  <li class="list-unstyled mb-2 flex items-center gap-2">
-
-    {{ if eq .icon "skateboard" }}
-      <img
-        src="{{ `icons/skateboard.svg` | relURL }}"
-        class="w-5 h-5 inline-block"
-        alt="Skateboard icon"
-        width="16"
-        height="16"
-        class="inline-block align-middle"
-      />
-    {{ else }}
-      <i class="{{ .icon }}"></i>
-    {{ end }}
-
+  {{ range .Site.Data.hobbies.list }}
+  <li class="list-unstyled mb-2">
+    <i class="{{ .icon }}"></i>
     {{ .hobby }}
   </li>
   {{ end }}
