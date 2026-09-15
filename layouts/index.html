@@ -20,7 +20,8 @@
         </p>
 
         <p class="text-lg opacity-70 max-w-xl mb-8">
-          I'm a Computer Science BSc Student at the <a href ="https://www.bristol.ac.uk/"> University of Bristol.</a>
+          I'm a Computer Science BSc Student at the
+          <a href="https://www.bristol.ac.uk/">University of Bristol.</a>
           Interested in cybersecurity, AI and software engineering.
           Feel free to reach out through any of my socials below.
         </p>
@@ -58,9 +59,11 @@
 <!-- Main content -->
 <div class="max-w-6xl mx-auto px-6">
 
+  {{ $data := .Site.Data }}
+
   {{ range .Site.Params.accordion }}
 
-    {{ $current := index .Site.Data .item }}
+    {{ $current := index $data .item }}
     {{ $sectionID := .item | urlize }}
 
     <section

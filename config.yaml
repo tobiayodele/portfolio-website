@@ -3,8 +3,7 @@ locale: en-uk
 build:
   writeStats: true
 title: Tobi Ayodele
-# Uncomment below to use aafu as hugo theme. See instructions in README.md
-# theme: aafu
+
 
 params:
   author: Tobi Ayodele
