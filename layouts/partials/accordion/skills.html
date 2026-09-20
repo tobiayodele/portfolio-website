@@ -1,18 +1,67 @@
-<script>
-  let elem = document.querySelector("#skill-panel");
-  if (elem) {
-  let skillPanel = elem.previousElementSibling;
-  skillPanel.addEventListener("click", function() {
-    let skillBars = document.querySelectorAll("#skill-percent");
-    skillBars.forEach(elem => {
-      elem.style.width = elem.classList[0];
-    });
-  });
-}
-</script>
-{{ range hugo.Data.skills.list }}
-<code>{{ .skill }}</code>
-<div class="w-full mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.1rem;">
-  <div id="skill-percent" class="{{ .skillrating }}% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
-</div>
-{{ end }}
+<!-- Devicon icon library -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+>
+
+<section class="tech-stacks">
+
+  <div class="tech-stacks-icons">
+
+    <div class="tech-item">
+      <i class="devicon-java-plain colored"></i>
+      <span>Java</span>
+    </div>
+
+    <div class="tech-item">
+      <i class="devicon-python-plain colored"></i>
+      <span>Python</span>
+    </div>
+
+    <div class="tech-item">
+      <i class="devicon-c-plain colored"></i>
+      <span>C</span>
+    </div>
+
+    <div class="tech-item">
+      <i class="devicon-haskell-plain colored"></i>
+      <span>Haskell</span>
+    </div>
+
+    <div class="tech-item">
+      <i class="devicon-html5-plain colored"></i>
+      <span>HTML</span>
+    </div>
+
+    <div class="tech-item">
+      <i class="devicon-css3-plain colored"></i>
+      <span>CSS</span>
+    </div>
+
+    <div class="tech-item">
+      <i class="devicon-git-plain colored"></i>
+      <span>Git</span>
+    </div>
+
+    <div class="tech-item">
+      <i class="devicon-github-original"></i>
+      <span>GitHub</span>
+    </div>
+
+    <div class="tech-item">
+      <i class="devicon-linux-plain"></i>
+      <span>Linux</span>
+    </div>
+
+    <div class="tech-item">
+      <i class="devicon-docker-plain colored"></i>
+      <span>Docker</span>
+    </div>
+
+    <div class="tech-item">
+      <i class="devicon-mysql-plain colored"></i>
+      <span>SQL</span>
+    </div>
+
+  </div>
+</section>
