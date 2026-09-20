@@ -5,7 +5,7 @@
     {
       "title": "Sudoku Generator and Solver",
       "url": "https://github.com/tobiayodele/Sudoku",
-      "description": "- A Java based Sudoku generator, solvable and playable game. Recursive Backtracking and greedy iterative algorithms are used to generate puzzles across three difficulty levels. Three cell-removal strategies ranked against runtime and probability of generating a uniquely solvable Sudoku puzzle to justify which option use in the generator.\n - See the report here: [report.pdf](https://github.com/tobiayodele/Sudoku/blob/experiments/docs/report_cell_removal_methods.pdf) "
+      "description": "- A Java based Sudoku generator, solvable and playable game. Recursive Backtracking and greedy iterative algorithms are used to generate puzzles across three difficulty levels. Three cell-removal strategies ranked against runtime and probability of generating a uniquely solvable Sudoku puzzle to justify which option use in the generator.\n - See the report here: [report.pdf](documents/report_cell_removal_methods.pdf) "
     },
     {
       "title": "Extended Project Qualification – Artificial Intelligence in Cybersecurity",
@@ -13,14 +13,14 @@
       "description": "- Completed a dissertation considering the advantages and disadvantages of implementing Artificial Intelligence in cybersecurity protection methods.\n- Considered current and planned use of Artificial Intelligence in enterprise endpoint threat detection software.\n- Analysed the potential for AI-enabled cyberattack methods, particularly the use of Natural Language Processing in social engineering and phishing attacks.\n- Achieved an **81% mark**."
     },
     {
-      "title": "Project 3",
-      "url": "#",
-      "description": "Description of the project"
+      "title": "Library Management System",
+      "url": "https://github.com/tobiayodele/library-management-system",
+      "description": "- Developed an object-oriented library management system with a Tkinter GUI supporting **1,000+ members** with role-based functionality for librarians.\n - Designed a SQLite relational database for members, books, and loans, implementing search and sorting functionality.\n - Conducted client interviews directly with librarians and users to identify problems with current management system and inform requirements.\n - Implemented login authentication system with secure password hashing, along with testing for input validation and parameterised SQL queries to prevent SQL injection.\n - See the report here: [report.pdf](documents/LMS_report.pdf) "
     },
     {
-      "title": "Project 4",
-      "url": "#",
-      "description": "Description of the project"
+      "title": "Custom Home Lab Machine",
+      "url": "/blog/home_server",
+      "description": "- Built and configured an Ubuntu Server home lab using Docker for self-hosted applications.\n - Measured power consumption and analysed estimated annual energy costs, documenting setup and results in a technical blog post."
     }
   ]
 }
