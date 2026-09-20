@@ -4,6 +4,11 @@
 <p {{ if .thesis_title }}class="mb-0" {{ end }}>
   {{- .dates }} &middot; {{ .college -}}
 </p>
+{{ if .grades }}
+<p class="mb-0">
+  {{ .grades }}
+</p>
+{{ end }}
 {{ if .thesis_title }}
 {{ if .thesis_url }}
 <p class="ms-2">

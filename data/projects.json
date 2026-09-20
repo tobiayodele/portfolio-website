@@ -3,9 +3,9 @@
   "icon": "bi bi-kanban",
   "list": [
     {
-      "title": "Project 1",
-      "url": "#",
-      "description": "Description of the project"
+      "title": "Sudoku Generator and Solver",
+      "url": "https://github.com/tobiayodele/Sudoku",
+      "description": "A Java based Sudoku generator, solvable and playable game. Recursive Backtracking and greedy iterative algorithms are used to generate puzzles across three difficulty levels. Three cell-removal strategies ranked against runtime and probability of generating a uniquely solvable Sudoku puzzle to justify which option use in the generator. See the report here: [report.pdf](https://github.com/tobiayodele/Sudoku/blob/experiments/docs/report_cell_removal_methods.pdf) "
     },
     {
       "title": "Project 2",

@@ -3,23 +3,22 @@
   "icon": "bi bi-mortarboard",
   "list": [
     {
-      "degree": "Ph.D. in Subject",
-      "college": "University of State-City",
-      "dates": "2013 - 2018",
-      "thesis_title": "Effect of humans on other humans: a study of human behavior.",
-      "thesis_url": "#"
+      "degree": "BSc Computer Science",
+      "college": "University of Bristol",
+      "dates": "2025 - 2028",
+      "grades": "1st Year Average: 68% (Upper Second Class)"
     },
     {
-      "degree": "M.S. in Subject",
-      "college": "University of State-City",
-      "dates": "2013 - 2018",
-      "thesis_title": "Effect of humans on other humans: a study of human behavior.",
-      "thesis_url": "#"
+      "degree": "Advanced Levels",
+      "college": "Westcliff High School for Boys",
+      "dates": "2023 - 2025",
+      "grades": "Computer Science (A), Economics (A), Mathematics (A), Physics (B), Extended Project Qualification (A)"
     },
     {
-      "degree": "B.S. in Subject",
-      "college": "University of State-City",
-      "dates": "2004 - 2009"
+      "degree": "GCSEs",
+      "college": "Westcliff High School for Boys",
+      "dates": "2018 - 2023",
+      "grades": "12 GCSEs grades 9-7 including Mathematics (9), Computer Science (9), Further Mathematics (8)"
     }
   ]
 }
