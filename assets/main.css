@@ -132,6 +132,7 @@
 }
 
 @layer components {
+  
   ul.pagination {
     @apply flex flex-row justify-center list-none;
 

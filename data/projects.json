@@ -5,12 +5,12 @@
     {
       "title": "Sudoku Generator and Solver",
       "url": "https://github.com/tobiayodele/Sudoku",
-      "description": "A Java based Sudoku generator, solvable and playable game. Recursive Backtracking and greedy iterative algorithms are used to generate puzzles across three difficulty levels. Three cell-removal strategies ranked against runtime and probability of generating a uniquely solvable Sudoku puzzle to justify which option use in the generator. See the report here: [report.pdf](https://github.com/tobiayodele/Sudoku/blob/experiments/docs/report_cell_removal_methods.pdf) "
+      "description": "- A Java based Sudoku generator, solvable and playable game. Recursive Backtracking and greedy iterative algorithms are used to generate puzzles across three difficulty levels. Three cell-removal strategies ranked against runtime and probability of generating a uniquely solvable Sudoku puzzle to justify which option use in the generator.\n - See the report here: [report.pdf](https://github.com/tobiayodele/Sudoku/blob/experiments/docs/report_cell_removal_methods.pdf) "
     },
     {
-      "title": "Project 2",
-      "url": "#",
-      "description": "Description of the project"
+      "title": "Extended Project Qualification – Artificial Intelligence in Cybersecurity",
+      "url": "/documents/epq_dissertation.pdf",
+      "description": "- Completed a dissertation considering the advantages and disadvantages of implementing Artificial Intelligence in cybersecurity protection methods.\n- Considered current and planned use of Artificial Intelligence in enterprise endpoint threat detection software.\n- Analysed the potential for AI-enabled cyberattack methods, particularly the use of Natural Language Processing in social engineering and phishing attacks.\n- Achieved an **81% mark**."
     },
     {
       "title": "Project 3",

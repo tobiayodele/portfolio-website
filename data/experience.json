@@ -2,10 +2,16 @@
   "title": "Experience",
   "icon": "bi bi-briefcase",
   "list": [{
-      "position": "Job Title",
-      "dates": "2022 - *Present*",
-      "url": "#",
-      "company": "Company Name"
+      "position": "Software Engineering Summer Internship",
+      "dates": "July 2023 – August 2023",
+      "url": "https://www.leonardo.com/en/home",
+      "company": "Leonardo S.p.A", 
+      "details": [
+        "Collaborated in a **3-person team** to design and build an autonomous sentry system according to design specifications simulating a Ministry of Defence security contract.",
+        "Developed Python software to process data from the sentry’s infrared sensors to enable real-time object detection and autonomous movement.",
+        "Applied Agile methodology to iteratively implement, test and improve the functionality of the sentry system.",
+        "Pitched the completed system to Leonardo engineers as a security contract bid, explaining design choices and demonstrating the function of the system within a test track achieving a **3rd place ranking across Leonardo UK branches.**"
+      ]
     },
     {
       "position": "Job Title",
